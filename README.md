@@ -16,7 +16,7 @@ If you need a primer on Rust, these resources are for you:
 
 - [Rust book](https://doc.rust-lang.org/book/)
 - [Rust by example](https://doc.rust-lang.org/rust-by-example/index.html)
-
+- [Rust cheatsheet](https://cheats.rs/)
 ### Solana Resources Using Native Rust
 - [Solana's native Rust docs](https://solana.com/docs/programs/rust)
 - [Solana's native Rust course](https://solana.com/developers/courses/native-onchain-development)
@@ -33,6 +33,8 @@ We highly recommend using [Anchor](https://www.anchor-lang.com), a framework for
 ### Solana Resources for EVM transitioners
 - [RareSkills' Solana course for Ethereum developers](https://www.rareskills.io/solana-tutorial)
 - [0xkowloon's Anchor for EVM developers](https://0xkowloon.gitbook.io/anchor-for-evm-developers)
+- [S3v3ru5's Solana Beginner Notes](https://s3v3ru5.github.io/posts/solana-beginner-notes/)
+
 
 ### General Resources
 - [Ackee's Solana handbook](https://ackee.xyz/solana/book/latest/)
@@ -40,15 +42,22 @@ We highly recommend using [Anchor](https://www.anchor-lang.com), a framework for
 - [Rektoff's Security roadmap](https://github.com/Rektoff/Security-Roadmap-for-Solana-applications)
 - [Helius's blog](https://www.helius.dev/blog): Frequently publishes Solana-related content
 - [Pine Analytics's Substack](https://substack.com/@pineanalytics1): Focuses on deep diving into features of Solana protocols
+
 - [Infect3d's Essentials for Starting Solana Auditing](https://www.infect3d.xyz/blog/solana-quick-start)
 - [Lucrative_Panda's highly detailed research article that covers all of Solana's security incidents](https://medium.com/@lucrativepanda/a-comprehensive-analysis-of-solanas-security-history-all-incidents-impacts-and-evolution-up-to-1b1564c7ddfe)
-- [Solana security course](https://solana.com/developers/courses/program-security)
 - [r0bre's 100 Daily Solana Tips](https://accretionxyz.substack.com/p/r0bres-100-daily-solana-tips)
 - [Accretion's Hidden IDL Instructions and How to Abuse Them](https://accretionxyz.substack.com/p/hidden-idl-instructions-and-how-to)
 - [Farouk ELALEM's explanation of how Solana programs work under the hood](https://ubermensch.blog/under-the-hood-of-solana-program-execution-from-rust-code-to-sbf-bytecode)
 - [Ottersec's lamport transfers vulnerabilities](https://osec.io/blog/2025-05-14-king-of-the-sol)
+- [Asymmetric Research's analysis of CPI vulnerabilities](https://blog.asymmetric.re/invocation-security-navigating-vulnerabilities-in-solana-cpis/)
+- [Alex Lazar's analysis of CPI vulnerabilities](https://newsletter.alexlazar.dev/p/external-calls-are-dangerous)
+- [AlexAlekhinEth's high-level explanation of Solana network architecture](https://medium.com/@AlexAlekhinEth/solana-how-it-works-a-technical-deep-dive-b180468abc3d)
+- [Helius's complete history of Solana outages](https://www.helius.dev/blog/solana-outages-complete-history)
+- [Exo Tech's guide for developers on creating auditor-friendly architecture documentation](https://exotechnologies.xyz/p/a-developer-s-guide-to-audit-readiness)
+
 
 - Solana's general common vulnerabilities:
+  - [Solana security course](https://solana.com/developers/courses/program-security)
   - [Urataps's program examples with vulnerabilities](https://github.com/urataps/solana-audit-examples)
   - [Helius's common vulnerabilities](https://www.helius.dev/blog/a-hitchhikers-guide-to-solana-program-security) 
   - [ImmuneBytes's common Solana attack vectors](https://github.com/ImmuneBytes-Security-Audit/Blockchain-Attack-Vectors/tree/main/Solana%20Attack%20Vectors)
@@ -57,11 +66,12 @@ We highly recommend using [Anchor](https://www.anchor-lang.com), a framework for
   - [Zigtur's Solana security walkthrough](https://www.youtube.com/watch?v=xd6qfY-GDYY)
   - [M4rio's Solana security walkthrough](https://www.youtube.com/watch?v=q4z8tIi43lg)
   - [Nirlin's advanced Solana vulnerabilities](https://substack.com/inbox/post/164534668)
+
+
 - Token-2022 Security resources:
   - Offside's Token-2022 best practices [Part 1](https://blog.offside.io/p/token-2022-security-best-practices-part-1) and [Part 2](https://blog.offside.io/p/token-2022-security-best-practices-part-2)
   - [Neodyme's Token-2022 security](https://neodyme.io/en/blog/token-2022)
 
-- [Asymmetric Research's CPI vulnerabilities](https://blog.asymmetric.re/invocation-security-navigating-vulnerabilities-in-solana-cpis/)
 
 ### Codebases to Study
 **Essential:**
@@ -77,6 +87,8 @@ We highly recommend using [Anchor](https://www.anchor-lang.com), a framework for
 - [Raydium program](https://github.com/raydium-io/raydium-cp-swap): AMM protocol
 - [Kamino program](https://github.com/Kamino-Finance/klend): Lending protocol
 - [Squads program](https://github.com/Squads-Protocol/v4): Multisig protocol
+- [Solana Upgradeable BPF Loader program](https://github.com/solana-program/loader-v3)
+- [Solana Address Lookup Table program](https://github.com/solana-program/address-lookup-table)
 
 ### Places to Ask Questions
 - [Solana Stack Exchange](https://solana.stackexchange.com/) 
@@ -87,6 +99,8 @@ We highly recommend using [Anchor](https://www.anchor-lang.com), a framework for
 - [Sec3's IDL Guesser](https://github.com/sec3-service/IDLGuesser): Reverse engineers IDL from onchain programs for easier integration
 - [Trail of Bits's Anchor X-ray](https://github.com/crytic/anchorx-ray): Visualizes accounts in Anchor programs
 - [John Saigle's Anchor version detector](https://github.com/johnsaigle/anchor-version-detector): Helps figure out which versions of Rust, Solana, and Anchor are compatible with a given Anchor project.
+- [Ackee's Trident](https://ackee.xyz/trident/docs/latest/): Fuzzing framework for Solana
+- [Ackee's Solana IDE extension](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.solana): Automatically detects common security issues in Solana programs and visualizes Trident fuzzing coverage
 
 ### CTFs
 - [Ackee Solana CTF](https://github.com/Ackee-Blockchain/Solana-Auditors-Bootcamp/tree/master/Capture-the-Flag)
@@ -97,19 +111,20 @@ Solana security audits that are publicly available:
 - [Orderly on Sherlock](https://audits.sherlock.xyz/contests/524/report): 2 High and 1 Medium 
 - [WOOFi on Sherlock](https://audits.sherlock.xyz/contests/535/report): 2 High and 3 Medium 
 - [Pump Science on Code4rena](https://code4rena.com/reports/2025-01-pump-science): 2 High and 3 Medium
+- [Token22 Confidential Transfer on Code4rena](https://code4rena.com/reports/2025-08-solana-foundation): 7 Low
+- [Meteora on Code4rena](https://code4rena.com/reports/2025-08-meteora-dynamic-bonding-curve): 2 Medium
 
 **NOTE: Contact `0xmorph` in the Cantina Discord server to gain read access if you don't have it.**
 - [Grass on Cantina](https://cantina.xyz/competitions/3211ee0d-133f-43a0-837e-8dc1ecfaa424): 13 High and 6 Medium
 - [Olas on Cantina](https://cantina.xyz/competitions/829164bf-7fba-4b84-a6b8-76652205bd97): 2 High and 3 Medium
 - [Tensor on Cantina](https://cantina.xyz/competitions/21787352-de2c-4a77-af09-cc0a250d1f04): 5 High and 10 Medium
-- [ZetaChain on Cantina](https://cantina.xyz/competitions/80a33cf0-ad69-4163-a269-d27756aacb5e): 6 High and 27 Medium (both Solidity and Solana are in-scope)
-- [Inclusive Finance on Cantina](https://cantina.xyz/competitions/3eff5a8f-b73a-4cfe-8c54-546b475548f0): 45 High and 25 Medium (both Solidity and Solana are in-scope)
+- [ZetaChain on Cantina](https://cantina.xyz/competitions/80a33cf0-ad69-4163-a269-d27756aacb5e): 6 High and 27 Medium (partial Solana scope)
+- [Inclusive Finance on Cantina](https://cantina.xyz/competitions/3eff5a8f-b73a-4cfe-8c54-546b475548f0): 45 High and 25 Medium (partial Solana scope)
 - [Reserve Index on Cantina](https://cantina.xyz/code/8b94becd-54e7-41cd-88e6-caae7becc76a): 10 High and 11 Medium
+- [Solayer on Cantina](https://cantina.xyz/code/0f543452-2076-438f-86ae-bbd6b065fffb): 3 High and 6 Medium
+- [Genius on Cantina](https://cantina.xyz/code/12acc80c-4e4c-4081-a0a3-faa92150651a): 6 High and 4 Medium (partial Solana scope)
 
-<!-- 
-
-Pinocchio section:
-  
-
- -->
+**NOTE: First Flights are introductory audit challenges with smaller codebases, designed for beginners to practice finding vulnerabilities.**
+- [RustFund first flight](https://codehawks.cyfrin.io/c/2025-03-rustfund/results?t=report): 4 High and 3 Medium
+- [SSSwap first flight](https://codehawks.cyfrin.io/c/2025-05-ssswap/results?t=report): 5 High and 4 Medium
 
